@@ -26,17 +26,17 @@
 
 .welcome-text span {
   display: block;
-  font-size: 2.5rem;
-  margin-bottom: -0.9rem;
+  font-size: 3.5rem;
+  margin-bottom: -1rem;
 }
 
 .welcome-text h1 {
-  font-size: 3.5rem;
+  font-size: 7rem;
   margin: 0;
 }
 .hero form {
   padding: 8px;
-  width: 80%;
+  width: 90%;
   background-color: white;
   border-radius: 5px;
   font-size: 20px;
@@ -54,7 +54,7 @@
 }
 .hero button {
   border: none;
-  background: #1c35c4;
+  background: #009790;
   color: white;
   font-size: 16px;
   padding: 10px 30px;
@@ -62,10 +62,11 @@
   cursor: pointer;
 }
 .crypto-table {
-  max-width: 800px;
+  max-width: 1300px;
   margin: auto;
-  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+  background: #002e2c;
   border-radius: 15px;
+  margin-bottom: 40px;
 }
 .table-layout {
   display: grid;

@@ -32,8 +32,8 @@ const Home = () => {
     <div className="Home">
       <div className="hero">
         <div className="welcome-text">
-          <span>Largest</span>
-          <h1>Crypto Marketplace</h1>
+          <span>Welcome to</span>
+          <h1>CoinRadar!</h1>
         </div>
         <p>The best place to track your favorite cryptocurrencies.</p>
         <form onSubmit={searchHandler}>
@@ -62,7 +62,7 @@ const Home = () => {
           <p style={{ textAlign: "center" }}>24h Change</p>
           <p className="market-cap">Market Cap</p>
         </div>
-        {displayCoin.slice(0, 10).map((item, index) => (
+        {displayCoin.slice(0, 50).map((item, index) => (
           <Link to className="table-layout" key={index}>
             <p>{item.market_cap_rank}</p>
             <div>

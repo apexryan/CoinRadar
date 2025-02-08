@@ -9,9 +9,9 @@ const navbar = () => {
 
   const currencyHandler = (event) => {
     switch (event.target.value) {
-      case "usd":
+      case "inr":
         {
-          setCurrency({ name: "usd", symbol: "$" });
+          setCurrency({ name: "inr", symbol: "₹" });
         }
         break;
 
@@ -20,14 +20,14 @@ const navbar = () => {
           setCurrency({ name: "eur", symbol: "€" });
         }
         break;
-      case "inr":
+      case "usd":
         {
-          setCurrency({ name: "inr", symbol: "₹" });
+          setCurrency({ name: "usd", symbol: "$" });
         }
         break;
       default:
         {
-          setCurrency({ name: "usd", symbol: "$" });
+          setCurrency({ name: "inr", symbol: "₹" });
         }
         break;
     }
@@ -44,12 +44,14 @@ const navbar = () => {
       </ul>
       <div className="nav-right">
         <select onChange={currencyHandler}>
-          <option value="usd">USD</option>
-          <option value="eur">EUR</option>
           <option value="inr">INR</option>
+          <option value="eur">EUR</option>
+          <option value="usd">USD</option>
         </select>
-        <button>
-          Sign up <img src={arrow_icon} alt="" />
+        <button
+          onClick={() => window.open("https://github.com/apexryan", "_blank")}
+        >
+          My Github <img src={arrow_icon} alt="" />
         </button>
       </div>
     </div>
