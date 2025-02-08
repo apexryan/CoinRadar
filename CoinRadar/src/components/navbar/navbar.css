@@ -30,9 +30,10 @@
   color: white;
 }
 .navbar option {
-  background-color: #040029;
+  background-color: #001f1d;
   color: white;
 }
+
 .navbar button {
   display: flex;
   align-items: center;
