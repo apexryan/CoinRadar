@@ -3,3 +3,4 @@
 
 It also includes functionalities such as features, pricing and blog page. <br/>
 More functionalities will be added soon. 
+View Site - https://coinradar-rjs.netlify.app/
