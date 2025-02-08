@@ -59,7 +59,11 @@ const navbar = () => {
             Pricing
           </Link>
         </li>
-        <li>Blog</li>
+        <li>
+          <Link to="/blog" style={{ textDecoration: "none", color: "inherit" }}>
+            Blog
+          </Link>
+        </li>
       </ul>
       <div className="nav-right">
         <select onChange={currencyHandler}>
