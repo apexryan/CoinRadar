@@ -22,7 +22,7 @@ const navbar = () => {
         break;
       case "inr":
         {
-          setCurrency({ name: "inr", symbol: "⟨₹" });
+          setCurrency({ name: "inr", symbol: "₹" });
         }
         break;
       default:
