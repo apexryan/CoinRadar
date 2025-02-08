@@ -48,9 +48,9 @@ const Pricing = () => {
               <span className="amount">{plan.price}</span>
               <span className="period">{plan.period}</span>
             </div>
-            <div className="features">
+            <div className="featuresv1">
               {plan.features.map((feature, featureIndex) => (
-                <div className="feature" key={featureIndex}>
+                <div className="featurev1" key={featureIndex}>
                   {feature.included ? (
                     <span className="check">✓</span>
                   ) : (

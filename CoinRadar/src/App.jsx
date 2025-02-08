@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Coin from "./pages/Coin/Coin";
 import Footer from "./components/footer/footer";
 import Pricing from "./pages/Pricing/Pricing";
+import Features from "./pages/Features/Features";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/coin/:coinId" element={<Coin />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/features" element={<Features />} />
       </Routes>
       <Footer />
     </div>
