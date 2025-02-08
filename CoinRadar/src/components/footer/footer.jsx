@@ -4,7 +4,7 @@ import "./footer.css";
 const footer = () => {
   return (
     <div className="footer">
-      <p>Copyright @ 2025, CoinRadar - All Rights Reserved</p>
+      <p>© CoinRadar. All Rights Reserved.</p>
     </div>
   );
 };

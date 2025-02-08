@@ -15,7 +15,7 @@
   font-size: max(4vw, 36px);
 }
 .hero p {
-  width: 75%;
+  width: 95%;
   color: #e3e3e3;
   line-height: 1.5;
 }
@@ -27,7 +27,7 @@
 .welcome-text span {
   display: block;
   font-size: 3.5rem;
-  margin-bottom: -1rem;
+  margin-bottom: -0.5rem;
 }
 
 .welcome-text h1 {
@@ -35,10 +35,10 @@
   margin: 0;
 }
 .hero form {
-  padding: 8px;
-  width: 90%;
+  padding: 12px;
+  width: 120%;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -58,23 +58,24 @@
   color: white;
   font-size: 16px;
   padding: 10px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .crypto-table {
   max-width: 1300px;
   margin: auto;
   background: #002e2c;
+  padding: 20px;
   border-radius: 15px;
   margin-bottom: 40px;
 }
 .table-layout {
   display: grid;
 
-  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
-  padding: 15px 20px;
+  grid-template-columns: 0.6fr 2fr 1fr 1fr 1.5fr;
+  padding: 20px 20px;
   align-items: center;
-  border-bottom: 1px solid #3c3c3c;
+  border-bottom: 1px solid #0c1618;
 }
 .market-cap {
   text-align: right;
@@ -115,5 +116,32 @@
   }
   .hero form input {
     width: 100px;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid #009790;
+  white-space: nowrap;
+  margin: 0;
+  animation: typing 2.5s steps(10, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #009790;
   }
 }

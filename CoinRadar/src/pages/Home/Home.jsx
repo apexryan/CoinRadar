@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CoinContext } from "../../context/CoinContext";
 import { Link } from "react-router-dom";
+import strip from "../../assets/strip.png";
 
 import "./Home.css";
 
@@ -33,7 +34,7 @@ const Home = () => {
       <div className="hero">
         <div className="welcome-text">
           <span>Welcome to</span>
-          <h1>CoinRadar!</h1>
+          <h1 className="typewriter">CoinRadar!</h1>
         </div>
         <p>The best place to track your favorite cryptocurrencies.</p>
         <form onSubmit={searchHandler}>
@@ -54,13 +55,26 @@ const Home = () => {
           <button type="submit">Search</button>
         </form>
       </div>
+
+      <img
+        src={strip}
+        alt="Decorative image"
+        style={{
+          width: "100%",
+          maxWidth: "1920px",
+          height: "auto",
+          margin: "3rem auto",
+          display: "block",
+        }}
+      />
+
       <div className="crypto-table">
         <div className="table-layout">
-          <p>#</p>
-          <p>Coins</p>
-          <p>Price</p>
-          <p style={{ textAlign: "center" }}>24h Change</p>
-          <p className="market-cap">Market Cap</p>
+          <p>RANK</p>
+          <p>NAME</p>
+          <p>PRICE</p>
+          <p style={{ textAlign: "center" }}>24H CHANGE</p>
+          <p className="market-cap">MARKET CAP</p>
         </div>
         {displayCoin.slice(0, 50).map((item, index) => (
           <Link to className="table-layout" key={index}>
